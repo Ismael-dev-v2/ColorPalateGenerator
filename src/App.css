@@ -121,3 +121,16 @@ p.author a {
   font-weight: 700;
   color: #000;
 }
+
+@media only screen and (max-width: 768px) {
+  .single-card{
+    height: 80px;
+    width: 80px;
+    padding: 0;
+  }
+
+  .form-color h1 {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+}
