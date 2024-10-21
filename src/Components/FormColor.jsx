@@ -8,7 +8,7 @@ const FormColor = ({ setList }) => {
   const handleGenerator = (e) => {
     e.preventDefault();
     try {
-      let colors = new Values(color).all(10);
+      let colors = new Values(color).all(5);
       setList(colors);
       setError(false);
     } catch (error) {
