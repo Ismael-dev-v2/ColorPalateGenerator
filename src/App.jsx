@@ -1,14 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Values from 'values.js'
 import './App.css'
+import FormColor from './Components/FormColor'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [list, setList] = useState(new Values('red').all(10));
+
+  console.log(list)
 
   return (
     <>
      <h2>Test Component</h2>
+     <FormColor setList={setList}/>
     </>
   )
 }
